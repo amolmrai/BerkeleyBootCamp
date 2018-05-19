@@ -1,0 +1,8 @@
+Objectives
+
+* Students will use the Bootstrap grid to create columns and rows for their html
+
+* Students will use media queries to create mobile responsive websites
+
+Questions:- 
+How to create xxx.min.css file or conver our current CSS file into min version ?

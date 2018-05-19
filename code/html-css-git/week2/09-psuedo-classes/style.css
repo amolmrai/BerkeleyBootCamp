@@ -1,0 +1,31 @@
+p {
+	display: none;
+}
+
+a {
+	background-color: blue;
+	margin: 5px;
+}
+
+a:link {
+	color: white;
+}
+
+a:visited {
+	color: orange;
+}
+
+a:hover {
+	color: black;
+}
+
+a:hover p {
+	display: block;
+}
+
+h1:hover{
+	color: red;
+}
+h2:hover{
+	display: none;
+}

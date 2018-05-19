@@ -1,0 +1,22 @@
+#p_1{
+    font-family:"Times New Roman", "Times, serif";
+    font: size 20;
+    font: weight 5px;
+    line-height:30px;
+}
+
+#p_2{
+    font-family: "Ampersand";
+    font: size 20;
+    font: weight 5px;
+    line-height:20px;
+
+}
+
+#p_3{
+    font-family: fantasy;
+    font: size 20;
+    font: weight 5px;
+    line-height:25px;
+
+}
