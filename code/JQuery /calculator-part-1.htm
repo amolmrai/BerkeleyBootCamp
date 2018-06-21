@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+</head>
+<body>
+	<div id="container">
+		<button data-val="1">1</button>
+		<button data-val="2">2</button>
+		<button data-val="+">+</button>
+		<button data-val="-">-</button>
+		<button data-val="=">=</button>
+
+		<div id="display">
+			
+		</div>
+	</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+	var num1="";
+	var num2;
+	var act;
+	$('button').on('click',function(){
+		num1 += $(this).data('val');
+		if(num1 != "+" && num1 != "-" && num1 != "="){
+			$('#display').text(num1);
+			 
+
+
+		}else{
+			act = $(this).data('val');
+			if(isNaN(num1)){
+				
+			}
+			
+		}
+		
+		//alert(btnVal);
+
+
+	});
+
+</script>
+</body>
+</html>
+
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+	var myFarm = ["chickens", "pigs", "cows", "horses", "ostriches"];
+	//* Then check if the first letter in the animal's name begins with a "c" or "o". If it does, console.log: "Starts with 'c' or 'o'!"
+	
+
+	for (var a = myFarm.length-1; a >= 0; a--){
+      	var word = myFarm[a];
+      	if(word[0] == "c" || word[0] == "o"){
+        	console.log(myFarm[a]+" Starts with 'c' or 'o'!");
+    	}
+
+      }     
+
+
+	for (var a = 4; a < myFarm.length; a){
+      	var word = myFarm[a];
+      	if(word[0] == "c" || word[0] == "o"){
+        	console.log(myFarm[a]+" Starts with 'c' or 'o'!");
+    	}
+
+      }   
+
+      //one way
+		var fLet;
+
+		for(var i=0; i<myFarm.length; i++){
+			fLet = myFarm[i][0];
+			if (fLet == 'c' || fLet == 'o') {
+				console.log('starts with c or o');
+			}
+		}
+
+	//another way
+		var fLet;
+
+		for(var i=0; i<myFarm.length; i++){
+			fLet = myFarm[i].charAt(0);
+			if (fLet == 'c' || fLet == 'o') {
+				console.log('starts with c or o');
+			}
+		}  
+
+</script>
+</body>
+</html>
+
+

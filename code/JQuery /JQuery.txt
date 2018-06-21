@@ -1,0 +1,12 @@
+objectives
+students will use a new data structure called an object
+
+students will interview each other and "objectify" their partners
+
+students will debug with console.log
+
+students will debug with debugger
+
+students will dynamically create elements from JavaScript and add that to the page
+
+students will use jQuery

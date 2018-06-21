@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+<body>
+make an html file <br>
+
+put the script tag in <br>
+
+in the script tag, write code so that when the user hits a key, it alerts hi -->
+
+	<script type="text/javascript">
+		function funSayHi(event){
+			var key = event.key;
+			alert("Hi "+key);
+		}
+		//document.onclick = funSayHi;
+		document.onkeyup = funSayHi;
+	</script>
+
+</body>
+</html>

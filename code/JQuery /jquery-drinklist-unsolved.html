@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Content!</title>
+</head>
+<body>
+
+  <h1>Drink Selection!</h1>
+  <hr>
+
+  <ul id="drink-options"></ul>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script type="text/javascript">
+
+    var drinkList = [
+      "Coffee",
+      "Espresso",
+      "Cappuccino",
+      "Latte",
+      "Tea",
+      "Ice Coffee",
+      "Ice Espresso",
+      "Ice Latte",
+      "Ice Tea"
+    ];
+
+    // Using jQuery programmatically append each drinkList item to the "drink-options" ul as a li tag
+    // HINT: you will need a for loop to go over each element in the list
+   
+   var mainUl = $('#drink-options');
+    for(key in drinkList){
+    	var listElement = $('<li>').text(drinkList[key]);
+    	mainUl.append(listElement)
+    }
+
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Number Checker</title>
+
+  <!-- Added a link to Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+  <div class="jumbotron">
+    <h1 class="text-center">Number Guesser</h1>
+    <h2 class="text-center">See if you can guess the number the computer is thinker of!</h2>
+  </div>
+
+  <div class="container">
+
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Computer Pick</h3>
+        </div>
+        <div class="card-body text-center">
+          <p id="computer-pick">???</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">You Pick</h3>
+        </div>
+        <div class="card-body text-center">
+          <button id="button-1" class="btn btn-danger btn-choice" data-value="1">1</button>
+          <button id="button-2" class="btn btn-danger btn-choice" data-value="2">2</button>
+          <button id="button-3" class="btn btn-danger btn-choice" data-value="3">3</button>
+          <button id="button-4" class="btn btn-danger btn-choice" data-value="4">4</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Result</h3>
+        </div>
+        <div class="card-body text-center">
+          <p id="result"></p>
+        </div>
+      </div>
+ 
+  </div>
+
+  <!-- Added link to the jQuery Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script type="text/javascript">
+
+    // Here we create the on click event that gets the user"s pick
+    $(".btn-choice").on("click", function() {
+
+      console.log("You clicked a button!!");
+      var button = $(this);
+      var btnVal = button.data('value');
+      // Add code to have the computer guess a random number between 1 and 4
+      var randNum = Math.floor( Math.random()*4 )+1 ;
+      $('#computer-pick').text(randNum);
+      
+      //compare the random number to what the user pressed
+       if(btnVal == randNum){
+          $('#result').text("You got it !");
+       }else{
+          $('#result').text("You did not get it ! ");
+       }
+      //make it look like the video
+      //alert(randNum);
+
+
+    });
+
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Fridge Magnets</title>
+</head>
+
+<!-- CSS Styles (These styles are provided to you. Don't touch these!) -->
+<style>
+  body {
+    background: url(assets/fridge.png) no-repeat;
+  }
+
+  .letter {
+    width: 30px;
+    height: 30px;
+    border-style: solid;
+    padding: 2px;
+    float: left;
+    margin: 2px;
+  }
+
+  .letter-button-color {
+    color: darkcyan;
+  }
+
+  .fridge-color {
+    color: orange;
+  }
+
+  #display {
+    margin-top: 78px;
+    height: 500px;
+    width: 220px;
+    margin-left: 60px;
+  }
+
+  #buttons {
+    padding-top: 60px;
+  }
+
+  #clear {
+    margin-left: 20px;
+    font-size: 25px;
+    color: black;
+    border-style: solid;
+    width: 100px;
+  }
+</style>
+
+<body>
+  <!-- Fridge Game - do not touch the html -->
+  <div id="display"></div>
+  <div id="buttons"></div>
+  <button id="clear">clear</button>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+  
+   $(document).ready(function(){
+    var mainLetter = "abcdefghijklmnopqrstuvwxyz";
+    for(var i= 0; i<mainLetter.length; i++){
+      var btn = $('<button>');
+      btn.text(mainLetter[i]);
+      $('#buttons').append(btn);
+    }
+  });
+
+   // Here we are provided an initial array of letters.
+      // Use this array to dynamically create buttons on the screen.
+     /*var letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "_"];
+ */
+    /*  var buttonsDisplay = $('#buttons')
+      var button;
+
+      /*for (index in letters){
+        button = $('<button>').text(letters[index]);
+        buttonsDisplay.append(button);
+      }*/
+
+      $(document).on('click', 'button', function(){
+        var button = $(this);
+        var letter = button.text();
+        var dis = $('#display');
+
+        if (letter == 'clear'){
+          dis.empty();
+        }else {
+          var span = $('<span>').text(letter).addClass('letter').addClass('fridge-color');
+
+          dis.append(span);
+        }
+
+      });
+
+
+
+  
+ 
+
+  
+
+    
+  
+
+
+  </script>
+</body>
+
+</html>

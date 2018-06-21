@@ -1,0 +1,56 @@
+
+<!-- ### File
+
+* *None*
+
+### Instructions
+
+* Create a website (from scratch) that asks users if they eat potatoes. Use a confirm (not a prompt)
+
+* If they respond with true, write the following to the page: "Here’s a bunch of fries!"
+
+* If they respond with false, write the following to the page: "Here’s a Tofu Stir-Fry!"
+
+* **BONUS:** Ask what the user’s birth year is. If they are under 21, alert the following: "No Sake for you!"
+
+* **HINT:** You will need to use `document.write()`
+
+
+Add CommentCollapse  -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+		<script type="text/javascript">
+			var eatPotatoes = confirm(" Do u eat potatoes ?");
+			var birthYear = parseInt(prompt(" what the user’s birth year ?"));
+
+			if (eatPotatoes) {
+
+					alert("Here’s a bunch of fries!");
+				}else {
+					alert("Here’s a Tofu Stir-Fry!");
+				}
+
+			var legalAge =  2018-birthYear;
+
+			if(legalAge > 21){
+				
+				var Sake = confirm(" Do u want drink Sake ?");
+				if(Sake){
+					alert("Here is sake for you !")
+				}
+
+			}else{
+				
+				alert("No Sake for you!!");
+			}
+
+		</script>
+
+
+</body>
+</html>

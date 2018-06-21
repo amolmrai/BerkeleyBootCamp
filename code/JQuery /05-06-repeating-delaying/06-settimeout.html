@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<button>STOP!!</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+	function annoying(){
+		alert('are we there yet?');
+	}
+
+	var annoyingTimeOut = setTimeout(annoying, 4000);
+
+	$('button').on('click', function(){
+		clearInterval(annoyingTimeOut);
+	});	
+
+	
+</script>
+</body>
+</html>

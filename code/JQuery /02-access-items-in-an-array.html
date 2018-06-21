@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var dogs = [
+		'fido',
+		'rex',
+		'chase',
+		'hunter',
+		'spot'
+	]
+
+	// 1. console.log 'fido' without using the word 'fido'
+		console.log(dogs[0]);
+	// 2. console log 'spot' without using the word 'spot' and without using the number 4, you can use the number 1 only
+		console.log( dogs[dogs.length-1]);
+	// 3. loop through the array and console log each dog
+		for(var ind = 0; ind< dogs.length; ind++){
+			console.log(dogs[ind]);
+		}
+	// 4. loop through the array and console log the length of each dog
+		for(var ind = 0; ind< dogs.length; ind++){
+			console.log(dogs[ind].length);
+		}	
+	// 5. loop through the array and console log the first letter of each dog
+		for(var ind = 0; ind< dogs.length; ind++){
+			console.log(" First letter "+dogs[ind][0]);
+		}
+
+	// 6. loop through the array and console log the last letter of each dog
+	//another way
+		for (var index = 0; index<dogs.length; index++){
+			console.log(dogs[index][dogs[index].length-1]);
+		}
+
+	//one way
+		//dogs is an array
+		for (var index in dogs){
+			//dogs[index] is a string - it's the name of the dog
+			console.log(dogs[index].charAt(dogs[index].length-1));
+		}
+
+	//another way
+		for (var index = 0; index<dogs.length; index++){
+			console.log(dogs[index].charAt(dogs[index].length-1));
+		}
+		
+		for(var i = 0; i< dogs.length; i++){
+			var lstInd = dogs[i].length;
+			console.log(" Last letter "+ dogs[i][lstInd-1]);
+		}
+</script>
+</body>
+</html>

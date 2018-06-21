@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+	var options = ['r', 'p', 's'];
+
+	//write code so that on key press, you alert a random value from the options array (you can't explicitly use 0, 1, 2 in your code)
+
+	function getRandVal(){
+		var randLettr = Math.floor(Math.random()*options.length);
+		alert(options[randLettr]);
+	}
+		document.onkeyup = getRandVal;
+
+</script>
+</body>
+</html>

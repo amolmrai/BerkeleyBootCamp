@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>if else example</title>
+</head>
+<body>
+<script type="text/javascript">
+	//one way
+		var favFood = prompt('type in your favorite food');
+
+		if (favFood == 'pizza') {
+			alert("Go to tony's pizza in North Beach!");
+		}else if (favFood == 'tacos') {
+			alert("Go to Gracias Madre in Mission!");
+		}else if (favFood == 'sushi') {
+			alert("Go to Shizen Sushi in Mission!");
+		}else {
+			alert("I don't know where you should go to");
+		}
+
+	//another way
+		var favFood = prompt('type in your favorite food');
+
+		switch(favFood) {
+		    case 'pizza':
+		        alert("Go to tony's pizza in North Beach!");
+		        break;
+		    case 'tacos':
+		        alert("Go to Gracias Madre in Mission!");
+		        break;
+		    case 'sushi':
+		    	alert("Go to Shizen Sushi in Mission!");
+		    	break;
+		    default:
+		        alert("I don't know where you should go to");
+		}
+	
+</script>
+</body>
+</html>

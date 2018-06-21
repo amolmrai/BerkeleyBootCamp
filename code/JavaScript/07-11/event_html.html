@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<div id="letters">
+		
+	</div>
+	<div id="letters2">
+		
+	</div>
+
+<script type="text/javascript">
+	/*function addTextToPage(event){
+		var key = event.key;
+
+		var letters = document.querySelector('#letters2');
+
+		letters.innerText = letters.innerText + key;
+	}
+	document.onkeyup = addTextToPage;*/
+
+	var letters;
+	function addTextToPage2(event){
+		var key = event.key;
+		if(key == 'Enter'){
+			letters.innerText =  letters.innerText+"\n";
+		}
+		 letters = document.querySelector('#letters2');
+
+		letters.innerText =  letters.innerText+key;
+	}
+	document.onkeyup = addTextToPage2
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Content!</title>
+</head>
+<body>
+
+  <h1>Drink Selection!</h1>
+  <hr>
+
+  <ul id="drinkOptions"></ul>
+
+  <script type="text/javascript">
+
+    // Array holds all of the drinks available
+    var drinkList = [
+      "Coffee",
+      "Espresso",
+      "Cappuccino",
+      "Latte",
+      "Tea",
+      "Ice Coffee",
+      "Ice Espresso",
+      "Ice Latte",
+      "Ice Tea"
+    ];
+
+    var drinkOptions = document.getElementById("drinkOptions");
+    var list;
+    for(dl in drinkList){
+      list= document.createElement("li");
+      list.innerText = drinkList[dl];
+      drinkOptions.appendChild(list);
+    }
+
+
+    // 1. Create a variable named drinkOptionsUl and set it equal to document.querySelector for #drinkOptions;
+    // ...
+
+
+    // ...
+
+
+    // 2. write a for loop that adds a li tag for each drink into the ul
+    // ...
+
+
+    // ...
+
+    /*
+      at the end your html will look like this:
+
+      <ul id="drinkOptions">
+        <li>"Coffee"</li>
+        <li>"Espresso"</li>
+        <li>"Cappuccino"</li>
+        <li>"Latte"</li>
+        <li>"Tea"</li>
+        <li>"Ice Coffee"</li>
+        <li>"Ice Espresso"</li>
+        <li>"Ice Latte"</li>
+        <li>"Ice Tea"</li>
+      </ul>
+
+    */
+
+  </script>
+
+</body>
+</html>

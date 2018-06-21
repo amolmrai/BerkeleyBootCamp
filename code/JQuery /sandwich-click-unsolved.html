@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Trigger Clicked</title>
+
+</head>
+
+<body>
+
+  <button id="pbj">Peanut Butter Jelly</button>
+  <button id="grilledCheese">Grilled Cheese</button>
+  <button id="cucumberTomato">Cucumber Tomato</button>
+
+  <!-- Added link to the jQuery Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+  var pbj=1;
+  var grilledCheese = 1;
+  var cucumberTomato = 1;
+
+  function getCountOfGrilledChees(){
+  	alert("Peanut Butter Jelly "+grilledCheese);
+  	grilledCheese++;
+  	
+  }
+  function getCountPbj(){
+  	alert("Grilled Cheese "+pbj);
+  	pbj++;
+  }
+  function getCountOfcucumberTomato(){
+  	alert("Cucumber Tomato "+cucumberTomato);
+  	cucumberTomato++;
+  }
+    $('#pbj').on('click', getCountPbj);
+    $('#grilledCheese').on('click', getCountOfGrilledChees);
+    $('#cucumberTomato').on('click', getCountOfcucumberTomato);
+
+  </script>
+
+</body>
+
+</html>

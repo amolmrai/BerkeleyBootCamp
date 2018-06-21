@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<div>Counter: <span id="counter"></span></div>
+
+<script type="text/javascript">
+	//write code here to add the number of times a key was hit into the span with an id of
+		
+		var counter = 0;
+		var spancount;
+		function funCounter(event){
+			/*var keyType = event.key;
+			if(keyType == "Enter" || counter == 10){
+				spancount.innerHTML += "<br>"
+			}*/
+			spancount = document.getElementById('counter').innerHTML += "<br>"+counter++;
+			//spancount.innerText =counter;
+			
+		}
+		document.onkeyup =funCounter;
+
+	/*var counter = 0;
+
+	document.querySelector('#counter').innerText = counter;
+
+	function goUp(){
+		counter += 1; 
+			//counter = counter +1
+			//counter++;
+			//++counter;
+		document.querySelector('#counter').innerText = counter;
+	}
+
+	document.onkeyup = goUp;*/
+</script>
+</body>
+</html>

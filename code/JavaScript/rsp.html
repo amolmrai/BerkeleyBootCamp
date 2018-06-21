@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	//when the user hits r, alert rock <br>
+	//when the user hits p, alert paper <br>
+	//when the user hits s, alert scissors
+
+<script type="text/javascript">
+		function rsp(event){
+			if(event.key == "r"){
+				alert("Rock");
+			}else if(event.key == "p"){
+				alert("Paper");
+			}else if(event.key == "s"){
+				alert("Scissors");
+			}else {
+				alert(event.key);
+			}
+
+		}
+		document.onkeyup = rsp;
+</script>
+</body>
+</html>

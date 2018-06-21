@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+	var things = ['desk', 'computer', 'phone'];
+
+	//prints 0
+	console.log(things.indexOf('desk'));
+
+	//prints 2
+		// console.log(things.indexOf('phone'));
+
+		//gives -1 because bear is not inside the array
+		// console.log(things.indexOf('bear'));
+
+		//ask user for input and check if it's inside of the array
+			// var userInput = prompt('give me a thing');
+
+			// var check = things.indexOf(userInput);
+
+			// console.log(check);
+
+	//ask user for input and check if it's inside of the array and alert inside or not inside
+
+		var userInput = prompt('give me a thing');
+
+		var check = things.indexOf(userInput);
+
+		if (check == -1){
+			alert('not inside');
+		}else{
+			alert('inside');
+		}
+			alert('test');
+		
+
+</script>
+</body>
+</html>

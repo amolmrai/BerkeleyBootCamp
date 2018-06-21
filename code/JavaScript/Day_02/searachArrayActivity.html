@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+	// ### File
+
+		// * *None*
+
+		// ### Instructions
+
+		// * Create a website that accomplishes the following:
+
+		//   * Create an array of 3 bands.
+
+		//   * With a prompt, ask the user's favorite band.
+
+		//   * If it's one of your favorites, alert: "YEAH I LOVE THEM!"
+
+		//   * If it's not, alert: "havent heard of them before"
+
+		//   * **HINT:**  You will use indexOf
+
+	var bears = ["Polar", "American", "Brown","Asian","Pizzly"];
+
+	var yourBears = prompt("Please give the bear name ");
+	
+	//one way
+		if (bears.indexOf(yourBears) == -1){
+			alert('havent heard of bear name  before let me add that in my list ');
+			bears.unshift(yourBears);
+			document.write(bears);
+		}else {
+			alert('bears exist');
+			document.write(bears);
+		}
+	
+
+	/*var bears = ['winnie the pooh', 'yogi', 'boo boo', 'po', 'gummiebear'];
+
+	var userBear = prompt('give me a bear');
+
+	var indexOfUserBear = bears.indexOf(userBear);
+
+	if (indexOfUserBear == -1){
+		bears.push(userBear);
+	}*/
+
+
+	/* */
+</script>
+</body>
+</html>

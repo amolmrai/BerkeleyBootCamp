@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>multi dimensional arrays</title>
+</head>
+<body>
+	<h1>multi dimensional arrays</h1>
+	<h2>Arrays within arrays</h2>
+
+<script type="text/javascript">
+	var classRoom = [
+			['Jason', 'Long', 'Jerry', 'Austin'], 
+			['Hooman', 'Thadeos', 'Ermias'], 
+			['Kelly', 'Ari']
+		];
+
+		//step one prints out 0,1,2
+		for (var i=0; i<classRoom.length; i++){
+			console.log(i);
+		}
+
+	//step two prints out first array, second array, third array
+		for (var i=0; i<classRoom.length; i++){
+			console.log(classRoom[i]);
+		}
+
+	//third step prints out the 1st arr 4 times, 2nd array 3 times, 3rd array 2 times
+		for (var i=0; i<classRoom.length; i++){
+			for (var j=0; j<classRoom[i].length; j++){
+				console.log(classRoom[i]);
+			}
+		}
+
+	// last step prints out each name on a new line
+		for (var i=0; i<classRoom.length; i++){
+			for (var j=0; j<classRoom[i].length; j++){
+				console.log(classRoom[i][j]);
+			}
+		}
+
+	// final complet for loop write code to loop over classRoom and console.log out the students' names like the image
+		for (var i = 0 ; i< classRoom.length; i++){ //i= classRoom[0]= ['Jason', 'Long', 'Jerry', 'Austin'], 
+			//console.log(classRoom[i]);
+			for(var a=0; a< classRoom[i].length; a++){
+				console.log(classRoom[i][a]);
+			}
+		}
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

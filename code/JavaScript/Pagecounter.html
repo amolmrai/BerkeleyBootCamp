@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<div>Counter: <span id="counter"></span></div>
+
+<script type="text/javascript">
+	var counter = 0;
+
+	document.querySelector('#counter').innerText = counter;
+
+	function incrementCounter(){
+		counter = counter + 1;
+		document.querySelector('#counter').innerText = counter;
+		if(counter == 10){
+			counter=0;
+			document.querySelector('#counter').innerText = counter;
+		}
+		/*
+
+		write code here so if counter == 10 
+			set the counter = 0
+			and update the page so the counter appears to be 0 on the page
+
+		*/
+	}
+
+	document.onkeyup = incrementCounter;
+
+
+</script>
+</body>
+</html>

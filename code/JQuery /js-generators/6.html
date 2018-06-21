@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<div></div>
+
+<script type="text/javascript">
+	var fruits = ["banana", "watermelon", "fig"];
+
+	var divOnPage = document.querySelector("div");
+
+	var newDiv;
+
+	for (var i=0; i<fruits.length; i++){
+		newDiv = document.createElement("div"); //<div></div>
+		newDiv.innerText = fruits[i]; //<div>banana</div>
+		divOnPage.appendChild(newDiv); //this adds it to the page
+	}
+
+</script>
+</body>
+</html>

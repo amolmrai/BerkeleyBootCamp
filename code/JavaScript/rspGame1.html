@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="container">
+		<p>Tie Count: <span id="ties"></span></p>
+		<p>What you pressed <span id="userChoice"></span></p>
+		<p>What computer pressed <span id="computerChoice"></span></p>
+	</div>
+
+<script type="text/javascript">
+	var options = ['r', 'p', 's'];
+
+	var counter = 1;
+	document.getElementById('ties').innerText = 0;
+	function getRandVal(ev){
+		var randLettr = Math.floor(Math.random()*options.length);
+		document.getElementById('computerChoice').innerText = options[randLettr]
+		document.getElementById('userChoice').innerText = ev.key
+		if(ev.key == options[randLettr]){
+			counter++;
+			document.getElementById('ties').innerText = counter;
+		}else{
+			//document.getElementById('ties').innerText = 0;
+		}
+	}
+		document.onkeyup = getRandVal;
+
+</script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+	var person = {
+	    name : "Vincent",
+	    foodTheyLike : "Steak",
+	    movieTheyLike : "Casino",
+	    bandTheyLike : "Beta Band",
+	    showTheyLike : "Black Mirror",
+	    activityTheyLike : "Riding Motorcycles",
+	    sportTheyLike : "Football",
+	    favoriteHoliday : "Thanksgiving",
+	    "favorite weekday" : "Friday"
+	}
+
+	//using square brackets to access values of properties in objects
+		console.log(person.name);
+		console.log(person["name"]); //alternative way of printing out the value in the object for a particular key
+
+		//you can't do person."favorite weekday"
+		//you can't do person.favorite weekday
+
+		//you can do this
+			console.log(person["favorite weekday"]);
+
+	//updating an object
+
+		person.fencing = true;
+
+		//alternative way
+			//person["fencing"] = true
+
+	//looping over an object
+		//prints out keys inside of object
+
+		for (key in person){
+		   console.log(key);
+		}
+
+		//printing out the values inside of an object
+		for (key in person){
+		   console.log(person[key]);
+		}
+
+		//printing out both key and value
+		for (key in person){
+		   console.log(key, person[key]);
+		}
+
+
+	console.log(person.foodTheyLike);
+	console.log(person.movieTheyLike);
+	console.log(person.bandTheyLike);
+	console.log(person.showTheyLike);
+	console.log(person.activityTheyLike);
+	console.log(person.sportTheyLike);
+	console.log(person.favoriteHoliday);
+</script>
+</body>
+</html>
+ 

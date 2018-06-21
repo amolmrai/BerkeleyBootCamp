@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="container">
+		
+	</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+	var dogs = [
+		{
+			name: 'fido',
+			type: 'poodle',
+			fav_toy: 'teddy bear',
+			fav_friend: 'sylvester',
+			fav_food: 'french fries',
+			age: 1,
+			location: 'San Francisco'
+		},
+		{
+			name: 'rex',
+			type: 'German Shepherd',
+			fav_toy: 'soccer ball',
+			fav_friend: 'beanie baby',
+			fav_food: 'pancakes',
+			age: 6,
+			location: 'Los Angeles'
+		},
+		{
+			name: 'chase',
+			type: 'dachshund',
+			fav_toy: 'football',
+			fav_friend: 'stretch armstrong',
+			fav_food: 'burger',
+			age: 5,
+			location: 'Daly City'
+		},
+		{
+			name: 'hunter',
+			type: 'Golden Retiever',
+			fav_toy: 'paper towel roll',
+			fav_friend: 'Yogi',
+			fav_food: 'french toast',
+			age: 4,
+			location: 'San Diego'
+		},
+		{
+			name: 'spot',
+			type: 'dalmation',
+			fav_toy: 'red ball',
+			fav_friend: 'scooby',
+			fav_food: 'scooby snacks',
+			age: 3,
+			location: 'Oakland'
+		}
+	]
+
+	// loop through the array and add buttons to the div. Each button should have the dog's name as text and should have the dog's information as data attributes in the button
+		var div = $('#container');
+		
+
+		for(ind in dogs){
+			var btn = $('<button>');
+			btn.text(dogs[ind].name);
+			btn.attr("data-name",dogs[ind].name);
+			btn.attr("data-type",dogs[ind].type);
+			btn.attr("data-fav_toy",dogs[ind].fav_toy);
+			btn.attr("data-fav_friend",dogs[ind].fav_friend);
+			btn.attr("data-fav_food",dogs[ind].fav_food);
+			btn.attr("data-age",dogs[ind].age);
+			btn.attr("data-location",dogs[ind].location);
+			div.append(btn);
+		}
+
+		//another way
+			var dogName, button, dog;
+			for (var index in dogs){
+				dogName = dogs[index].name;
+				button = $('<button>');
+				button.text(dogName);
+				dog = dogs[index];
+
+				for (var prop in dog){
+					button.attr('data-'+prop, dog[prop]);
+				}
+
+				$('#container').append(button);
+			}
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

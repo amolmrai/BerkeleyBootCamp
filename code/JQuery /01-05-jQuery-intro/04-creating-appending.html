@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Intro to jQuery</title>
+</head>
+
+<body>
+    <p>bye</p>
+    <div id="container"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+    //var container = document.querySelector('#container');
+    //selecting an element with an id of container
+    var container = $('#container');
+
+    //var p = document.createElement('p');
+    //creating a pargraph tag 
+    var par = $('<p>');
+
+    var p2 = $('<p>').text('good afternoon');
+
+    //par.innerText = 'hello';
+    par.text('hello');
+
+    //puts the paragraph at the top of the INSDIE of the div with an id of container
+    //container.prepend(p2);
+
+    //container.appendChild(par);
+
+  	//puts the paragraph at the bottom of the INSDIE of the div with an id of container
+    container.append(par);
+
+    </script>
+</body>
+
+</html>

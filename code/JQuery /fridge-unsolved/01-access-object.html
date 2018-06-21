@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var dog = {
+		name: 'fido',
+		type: 'poodle',
+		fav_toy: 'teddy bear',
+		fav_friend: 'sylvester',
+		fav_food: 'french fries',
+		age: 1,
+		location: 'San Francisco',
+	}
+
+	// 1. console.log the dog's name
+	console.log('Name:-'+dog.name);
+	console.log(dog['name']);
+	// 2. console log the dog's favorite fav_food
+	console.log('Favorite food:-'+dog.fav_food);
+	// 3. loop through the object and console log each property (property is the same as key)
+	for(key in dog){
+		console.log("Key:- "+key);
+	}
+
+	//print out both the key and the value
+	for (var key in dog){
+		console.log(key, dog[key]);
+	}
+</script>
+</body>
+</html>
+
+

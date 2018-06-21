@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var dogs = [
+		{
+			name: 'fido',
+			type: 'poodle',
+			fav_toy: 'teddy bear',
+			fav_friend: 'sylvester',
+			fav_food: 'french fries',
+			age: 1,
+			location: 'San Francisco'
+		},
+		{
+			name: 'rex',
+			type: 'German Shepherd',
+			fav_toy: 'soccer ball',
+			fav_friend: 'beanie baby',
+			fav_food: 'pancakes',
+			age: 6,
+			location: 'Los Angeles'
+		},
+		{
+			name: 'chase',
+			type: 'dachshund',
+			fav_toy: 'football',
+			fav_friend: 'stretch armstrong',
+			fav_food: 'burger',
+			age: 5,
+			location: 'Daly City'
+		},
+		{
+			name: 'hunter',
+			type: 'Golden Retiever',
+			fav_toy: 'paper towel roll',
+			fav_friend: 'Yogi',
+			fav_food: 'french toast',
+			age: 4,
+			location: 'San Diego'
+		},
+		{
+			name: 'spot',
+			type: 'dalmation',
+			fav_toy: 'red ball',
+			fav_friend: 'scooby',
+			fav_food: 'scooby snacks',
+			age: 3,
+			location: 'Oakland'
+		}
+	];
+
+	//prints the location of spot - the last dog
+	console.log(dogs[4].location)
+
+
+	// 1. console log the 4th element in the array
+		console.log(dogs[3]);
+	// 2. console log the age of spot
+		console.log(dogs[4].age);
+	// 3. console log Rex's favorite food
+		console.log(dogs[1].fav_food);
+	// 4. console log fido's favorite friend
+		console.log(dogs[0].fav_friend);
+	// 5. loop through the array and console log out each dog's name and favorite toy 
+		for(ind in dogs){
+			console.log("Name "+dogs[ind].name+", favorite toy "+dogs[ind].fav_toy);
+
+		}
+
+	
+</script>
+</body>
+</html>
+
+

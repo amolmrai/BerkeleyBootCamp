@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="Guess"> Guess what letter I'm thinking of </div>
+	<div>Wins <span id="Wins"></span></div>
+	<div>Losses <span id="Losses"></span></div>
+	<div>Guesses Left <span id="GuessesLeft"></span></div>
+	<div> Your Guesses so far <span id="YourGuesses"></span></div>
+
+<script type="text/javascript">
+	var maxGuessCount = 9;
+	var winCount = 0;
+	var lossesCount=0;
+	function getRandomLetter(){
+		var mainLetter = "abcdefghijklmnopqrstuvwxyz";
+		var randLettr = Math.floor(Math.random()*mainLetter.length);
+		return mainLetter.charAt(randLettr);
+	}
+	// var expLtr = getRandomLetter();
+	function yourguess(ev){	
+		if(maxGuessCount>0){
+			var yourguessLettr = ev.key;
+			
+			document.getElementById('YourGuesses').innerText +=  yourguessLettr+","; 
+
+			document.getElementById('GuessesLeft').innerText = maxGuessCount--; 
+			if(getRandomLetter()== yourguessLettr){
+				winCount++;
+				document.getElementById('Wins').innerText = winCount;
+			}else if(maxGuessCount == 0 && winCount <=0){
+				lossesCount++
+				document.getElementById('Losses').innerText =lossesCount; 
+			}
+		}else {
+			maxGuessCount = 9;
+			document.getElementById('YourGuesses').innerText = "";
+		}
+	}
+	document.onkeyup = yourguess;
+
+</script>
+
+</body>
+
+
+</html>

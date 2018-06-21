@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Trigger Random</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Added a link to Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+</head>
+<body>
+
+  <div class="jumbotron">
+
+    <h1 class="text-center">Generate a Random Number!</h1>
+
+    <div class="text-center">
+
+      <button id="randomButton" class="btn btn-primary btn-lg fa fa-question"></button>
+
+    </div>
+
+  </div>
+
+  <div id="randomNumContainer">
+  </div>
+
+  <!-- Added link to the jQuery library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+
+    //write code here
+    // var randomNumber = $('#randomNumber');
+
+
+    function getRandomNum(){
+      var divContainer = $('#randomNumContainer');
+      var randNum = Math.floor( (Math.random()+1)*999999999 );
+      var p = $('<p>');
+      p.attr('class','text-center');
+      p.text(randNum);
+      divContainer.prepend(p);
+    }
+
+    $('#randomButton').on('click',getRandomNum);
+
+  </script>
+
+</body>
+</html>

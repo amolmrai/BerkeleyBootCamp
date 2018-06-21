@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+	// Write a function called calculator that takes in 3 arguments, expect the first two to be numbers and the last one to be a string
+
+	// 	1,2,'add' would return 3
+	// 	1,2,'multiply' would return 2
+	// 	1,2, 'subtract' would return -1
+	// 	1,2,'divide' would return 0.5
+	function Cal(numOne,numTwo,strAction){
+		if(strAction.trim().toLowerCase() == "add" || strAction == "+"){
+			console.log(numOne+" Add "+ numTwo + " = "+parseInt(numOne+numTwo));
+		}else if(strAction.trim().toLowerCase( == "multiply" || strAction == "*"){
+			console.log(numOne+" multiply "+ numTwo + " = "+parseInt(numOne*numTwo));
+
+		}else if(strAction.trim().toLowerCase( == "subtract" || strAction == "-"){
+			console.log(numOne+" subtract "+ numTwo + " = "+parseInt(numOne-numTwo));
+
+		}else if(strAction.trim().toLowerCase( == "divide" || strAction == "-"){
+			console.log(numOne+" divide "+ numTwo + " = "+parseInt(numOne/numTwo));
+		}else
+			console.log("invalid entry please try again");
+	}
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+</head>
+<body>
+	<div id="container">
+		<button data-actor="Russell Crowe">Gladiator</button>
+
+		<button data-actor="Michael Biehn">The Terminator</button>
+
+		<button data-actor="Chadwick Boseman">Black Panther</button>
+	</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+	// on click of a button, alert the actor
+	$('button').on('click',function(){
+		alert($(this).data('actor'));
+	});
+
+	function funEven(number){
+		//var num = 10;
+		if(number %2==0){
+			alert('true');
+		}else{
+			alert('false');
+		}
+
+	}
+ 
+
+</script>
+</body>
+</html>

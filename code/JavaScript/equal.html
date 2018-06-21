@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+	/*
+		write a function that takes in 2 strings and tells you whether they're equal to one another regardless of extra spaces in front and behind and case
+		ex: 
+		"Apple", "APPLE" should console log true
+		"   Apple", "APPLE" should console log true
+		"   Ap ple", "APPLE" should console log false - don't worry about extra spaces in between the word
+	*/
+	//function isEquals(str1,str2){
+
+		/*var strActual,strExpected;
+		strActual = str1.toLowerCase();
+		strExpected=str2.toLowerCase();
+		
+		if(strActual === strExpected){
+			console.log(strActual+ " is Equal with "+strExpected);
+		}else{
+			console.log(strActual+ " is not Equal with "+strExpected);
+		}
+	}*/
+	// compareStrs('apple', 'APPLE    ');
+	//one way
+		// function compareStrs(a,b){
+		// 	console.log(a.trim().toLowerCase() == b.trim().toLowerCase());
+		// }
+
+
+	// Write a function called isOne that takes in 1 arguments, expect it to be a number 
+
+	// 	1 would return true
+	// 	2 would return false
+	// 	3 would return false
+
+	//bonus	
+	//"1" should return false
+	function isTwo(strNum){
+		var numActual = strNum; 
+		//numActual = parseInt(strNum);
+
+		if(numActual === 2){
+			console.log(numActual + " is number and equal to 2");
+		}else{
+				console.log(numActual + " is not Equal to 2 ");
+			}
+	}
+	//another way
+			function isTwo(num){
+				console.log(typeof(num) == 'number' && num == 2);
+			}
+	
+		
+
+</script>
+</body>
+</html>

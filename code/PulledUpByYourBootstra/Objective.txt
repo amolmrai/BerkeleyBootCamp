@@ -5,4 +5,4 @@ Objectives
 * Students will use media queries to create mobile responsive websites
 
 Questions:- 
-How to create xxx.min.css file or conver our current CSS file into min version ?
+How to create xxx.min.css file or convert current CSS file into min version ?

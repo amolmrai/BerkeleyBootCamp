@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<button data-age="40">bear</button>
+	<button data-age="60">frog</button>
+	<button data-age="10">hippo</button>
+
+	<input type="text" id="yourAge" placeholder="put your age in">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		//don't touch the html
+
+		function getAge(){
+			var button = $(this);
+			var yourAge = $('#yourAge').val();
+			var age = button.data('age');
+			
+			if(yourAge != ""){
+				if(yourAge > age){
+					alert("you r oder than me");
+				} else if(yourAge == age){
+					alert("we both are same age");	
+				} else if(yourAge < age){
+					alert("you r younger than me");
+				}
+			}else{
+				alert("Please enter text in input box");	
+			}
+		}
+	$("button").on('click',getAge)
+
+
+	</script>
+</body>
+</html>
