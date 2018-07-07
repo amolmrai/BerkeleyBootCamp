@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript"></script>
+
+</body>
+
+<body>
+<form>
+  <!-- Text with spanID that gets filled with content -->
+  <h1>My To Do's ! </h1>
+   To do item: <input type="text" id="btnName">
+
+  <!-- Button -->
+  <button id="submit" value="Add Item"> Add Item </button>
+
+  <div id="divContainer">
+  		
+  </div>
+
+</form>
+<!-- JQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+  	$('#submit').on('click',function(){
+  		event.preventDefault();
+  		var inputBtnName = $('#btnName').val();
+  		//alert(inputBtnName);
+  		var newBtn = $("<button>");
+  		var newp= $("<p>");
+  		newp.text(inputBtnName);
+  		newBtn.text("X");
+  		newBtn.addClass('delete');
+  		newp.append(newBtn)
+  		//$('#divContainer').append(newBtn);
+  		$('#divContainer').append(newp);
+  		$('#btnName').val("");
+  	});
+
+  	$(document).on('click','.delete',function(){
+  		event.preventDefault();
+  		//alert($(this).val());
+  		$(this).parent().remove();
+
+  	});
+
+
+  </script>
+
+
+</html>

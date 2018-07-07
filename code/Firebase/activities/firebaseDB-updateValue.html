@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<form>
+	
+	First Name <input type="text" id"fName">
+	<button id="add">Add</button>
+
+</form>
+
+<!-- Firebase JavaScript Link -->
+  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+
+  <!-- JQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+  	var config = {
+    apiKey: "AIzaSyCM29RN4lt5Z-OrgekghnDYIUmXEeQUgpQ",
+    authDomain: "testproject-51d1f.firebaseapp.com",
+    databaseURL: "https://testproject-51d1f.firebaseio.com",
+    projectId: "testproject-51d1f",
+    storageBucket: "testproject-51d1f.appspot.com",
+    messagingSenderId: "590192034787"
+  };
+
+    firebase.initializeApp(config);
+
+    // Get a reference to the database service
+    var database = firebase.database();
+
+    $('#add').on('click',function(){
+    	var fName = $('input').val();
+    	alert(fName);
+
+    	database.ref().set({
+        name: fName,
+      });
+
+    });
+
+    database.ref().on('click',function(snapshot){
+
+    	alert(snapshot.val());
+    });
+
+
+  </script>
+
+
+</body>
+</html>
